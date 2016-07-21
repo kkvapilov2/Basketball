@@ -7,22 +7,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#32303F"
         android:orientation="horizontal">
 
         <LinearLayout
 
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
             android:layout_weight="1"
+            android:background="#E8F1F2"
             android:orientation="vertical"
             tools:context="com.example.android.basketball.MainActivity">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:text="Team A" />
+                android:text="Team A"
+                android:textColor="#8E7818"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -30,49 +37,63 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="0" />
+                android:text="0"
+                android:textSize="40sp"
+                android:textColor="#32303F"/>
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:onClick="addTwoForTeamA"
-                android:text="+2 POINTS" />
+                android:text="+2 POINTS"
+                android:textColor="#E8F1F2" />
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:gravity="center"
                 android:onClick="addThreeForTeamA"
-                android:text="+3 POINTS" />
+                android:text="+3 POINTS"
+                android:textColor="#E8F1F2" />
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:gravity="center"
                 android:onClick="addOneForTeamA"
-                android:text="Free Throw" />
+                android:text="Free Throw"
+                android:textColor="#E8F1F2" />
         </LinearLayout>
 
         <LinearLayout
 
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
             android:layout_weight="1"
+            android:background="#E8F1F2"
             android:orientation="vertical"
             tools:context="com.example.android.basketball.MainActivity">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:text="Team B" />
+                android:text="Team B"
+                android:textColor="#8E7818"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -80,34 +101,42 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="0" />
+                android:text="0"
+                android:textSize="40sp"
+                android:textColor="#32303F"/>
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:gravity="center"
                 android:onClick="addTwoForTeamB"
-                android:text="+2 POINTS" />
+                android:text="+2 POINTS"
+                android:textColor="#E8F1F2" />
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:gravity="center"
                 android:onClick="addThreeForTeamB"
-                android:text="+3 POINTS" />
+                android:text="+3 POINTS"
+                android:textColor="#E8F1F2" />
 
             <Button
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:background="#8E7818"
                 android:gravity="center"
                 android:onClick="addOneForTeamB"
-                android:text="Free Throw" />
+                android:text="Free Throw"
+                android:textColor="#E8F1F2" />
         </LinearLayout>
     </LinearLayout>
 
@@ -117,9 +146,11 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="100dp"
         android:layout_marginTop="15dp"
+        android:background="#32303F"
         android:gravity="center"
         android:onClick="resetScore"
-        android:text="RESET" />
+        android:text="RESET"
+        android:textColor="#E8F1F2" />
 </RelativeLayout>
